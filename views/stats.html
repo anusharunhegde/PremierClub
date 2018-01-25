@@ -1,0 +1,41 @@
+<div class="container-fluid" style="height: 510px;background:url('images/stadium.jpg');background-size: cover;opacity:1"
+ ng-init="statsCntrl.loadStats()">
+	
+ <div class="row">
+		<div class="col-xs-12" style="height: 442px;margin-top: 69px;background-color: black;opacity: 0.7;">
+			
+			<div class="row">
+				<div class=" col-xs-12 text-center" style="height: 100px;margin-top: 50px; font-size: 4rem;">
+					{{statsCntrl.teamName}}
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12" style="height: 100px;">
+					<table class="table" style="background-color: #1f3f08;font-size: 1.2rem;">
+						<thead>
+							<tr>
+								<th class="text-center" scope="col">Matches Played</th>
+								<th scope="col">Wins</th>
+								<th scope="col">Losses</th>
+								<th scope="col">Goals</th>
+							</tr>
+						</thead>
+						<tbody>
+							<td class="text-center" scope="row">{{statsCntrl.noOfGamesPlayed}}</td>
+							<td scope="row">{{statsCntrl.win}}</td>
+							<td scope="row">{{statsCntrl.loss}}</td>
+							<td scope="row">{{statsCntrl.goals}}</td>
+						</tbody>
+					</table>
+				</div>
+			</div>	
+		</div>
+</div>			
+</div>
+
+<style type="text/css">
+	
+	.table{
+		font-size: 1rem;
+	}
+</style>

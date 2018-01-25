@@ -1,0 +1,168 @@
+<div class="container-fluid" style="height: 510px;background:url('images/stadium.jpg');background-size: cover;opacity:1" 
+ng-init="singleCntrl.loadSingle()">
+	
+	<div class="row">
+		<div class="col-xs-12" style="height: 442px;margin-top: 69px;background-color: black;opacity: 0.7;">
+
+			<div class="row" >
+				<div class="col-xs-12 text-center" style="height: 80px;margin-top: 40px;font-size: 2rem;">
+           <strong><em>{{singleCntrl.newDate|date:'fullDate'}}</em></strong>    
+        </div>
+			</div>
+
+			<div class="row " >
+				<a ng-href="#/{{singleCntrl.match.team1.code}}"><div class="col-xs-4 team1" style="height: 150px;text-align: right; "></div></a>
+
+        <div class="col-xs-4" style="height: 150px;margin-top: 50px;">
+          <div class="row ">
+              <div class="col-xs-6" style="border-right:2px solid black; height:58px;background-color: green;
+              padding-left: :5px; font-size:3rem;text-align: center;">
+                {{singleCntrl.score1}}
+              </div>
+              <div class="col-xs-6" style="height: 58px;background-color: green;padding: 0px;font-size: 3rem;
+              padding-left: 10px; text-align: center;">
+                {{singleCntrl.score2}}
+              </div>
+          </div>
+        </div>  
+
+				<a ng-href="#/{{singleCntrl.match.team2.code}} "><div class="col-xs-4 team2" style="height: 150px;text-align: left; "></div></a>
+			</div>
+
+			     
+
+		</div>
+	</div>
+</div>
+
+<style type="text/css">
+.vs{
+	background:url('images/vs.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.arsenal{
+  background:url('images/arsenal.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.bournemouth{
+  background:url('images/bournemouth.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.burnley{
+	background:url('images/burnley.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.chelsea{
+	background:url('images/chelsea.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.crystal{
+	background:url('images/crystal.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.everton{
+	background:url('images/everton.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.hullcity{
+	background:url('images/hul.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	 background-position: center;
+
+}
+.licester{
+	background:url('images/licester.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.liverpool{
+	background:url('images/liverpool.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.mancity{
+	background:url('images/mancity.jpg');
+  background-size: 190px;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.manunited{
+	background:url('images/mu.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.middle{
+	background:url('images/middle.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.south
+{
+	background:url('images/south.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.stoke{
+	background:url('images/stoke.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.sunderland{
+	background:url('images/sunderland.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.swansea{
+	background:url('images/swansea.png');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.tote{
+	background:url('images/tote.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.watford{
+	background:url('images/watford.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.westalbion{
+	background:url('images/westalbion.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.westham{
+	background:url('images/westham.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+</style>

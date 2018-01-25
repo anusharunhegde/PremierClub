@@ -1,0 +1,190 @@
+html{
+  font-size: 100%;
+ /* background: #ec6707;*/
+}
+
+body {
+    font: .75em "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/*....................................navigation..................................*/
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 800;
+}
+.navbar-custom .navbar-header .navbar-toggle {
+  color:  #e93900;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border-color:#170505;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color:  #ec6707;
+    background-color: transparent;
+}
+
+.navbar-default {
+    background-color: #090500;
+    border-color: #0e0101;
+}
+.navbar-default .navbar-brand {
+    color: #e93900;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+ .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #ec6707;
+    background-color: transparent;
+}
+.navbar{
+  min-height: 69px;
+}
+.navbar-right{
+  margin-right: 10px;
+}
+
+/*..............................footer..................................*/
+.footer-dark {
+    background: #a42409;
+    padding: 50px 0 65px;
+    height: 154px;
+    
+}
+
+a {
+    color: #f0e9cb;
+}
+a:focus, a:hover {
+    color: #ebf018;
+}
+
+.fa-inverse {
+    color: #d74400;
+}
+.text-muted{
+  color:#f0e9cb;;
+}
+
+/*..............................all Match View.....................................*/
+
+  
+  
+  .result-head{
+    padding: 30px 0;
+    font-size: 4rem;
+    letter-spacing:8px;
+  }
+ 
+  .btn{
+    text-align: left;
+    font-size: 18px;
+  }
+  .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover{
+    background-color: #dd3a27e6;
+    border-color: #dd3a27e6;
+  }
+  .btn-default:hover{
+    background-color: #dd3a27e6;
+    border-color: #dd3a27e6;
+  }
+  .dropdown-menu{
+    background-color: #dd3a27e6;
+    min-width: 180px;
+    font-size: 18px;
+    padding: 11px 0;
+  }
+  .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover{
+    background-color: #f2ef14;
+  }
+  
+
+  .form-control{
+    font-size: 18px;
+    color:#db6638;
+  }
+
+.scores{
+  background-color: #8a1929;
+  width: 70px;
+  font-size: 1.2rem;
+}
+.match-list{
+  word-spacing: 20px;
+
+}
+
+.matches{
+ 
+  font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    white-space: nowrap;
+    color: #fcfcfc;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    color:#db6638;
+    font-size: 1.2rem;
+    }
+
+.list-group{
+  margin-bottom: 95px;
+}
+
+
+
+.display li a{
+  display: block;
+  color:#de3f0b;
+  text-decoration: none;
+  padding: 12px 15px;
+  margin:0px;
+}
+
+.display li a:hover,a:focus{
+  background-color: #fc6c1e;;
+  color: white;
+  padding: 15px 19px;
+}
+.display span{
+  
+}
+
+
+/*...........................................*/
+
+

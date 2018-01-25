@@ -1,0 +1,85 @@
+<div class="container-fluid " style="background-color:#c24d02;height: 100%;  margin-top: 50px;" >
+
+    	<div class="row result">
+    		<div class="col-xs-2">
+    			
+        		<h1 class="result-head font-responsive">Results</h1>
+
+    		</div>
+    	</div>
+</div>
+<div class="container-fluid" style="background-color:#c24d02;height: 100%;">
+    	<div class="wrapper" style="height: 100px;">
+    		<div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <label> Filter</label> 
+                    <select class="form-control" id="chooseFilter">
+                        <option >--Filter BY--</option>
+                        <option>Team</option>
+                        <option>Score1</option>
+                        <option>Score2</option>
+                       
+                    </select>
+                </div>
+
+				<div class="col-xs-12 col-sm-6 col-md-3" id='teamFilter'>
+					<label>filter By Teams</label>
+                    <select class="form-control" ng-model="teams" 
+                    ng-options="value.team1.name for (key,value) in allCntrl.matches | unique :'team1.name'| orderBy :'team1.name'" 
+                     >
+                        <option value="" disabled="">-- Select Team--</option>
+                    </select>
+				</div>
+               
+                <div class="col-xs-12 col-sm-6 col-md-3" id="score1Filter">
+                    <label>filter By score1</label>
+                    <input ng-model="scorefilter1.score1" class="form-control" placeholder="Team1 Score">
+               
+                </div>
+                
+                <div class="col-xs-12 col-sm-6 col-md-3" id="score2Filter">
+                    <label>filter By score2</label>
+                    <input ng-model="scorefilter2.score2" class="form-control" placeholder="Team2 Score">
+               
+                </div>
+                 
+
+    		</div>
+		
+		</div><!-- wrapper-->
+
+    	<div class="display">
+    		<div class="row">
+    			<div class="col-xs-12">
+
+                   <ul style="color:#e7f512;list-style-type: none;font-size: 1.6rem;margin-top: 80px;" class="list-group ">
+                      
+                      
+                                
+                                    <li class="list-group-item text-center" ng-repeat="data in allCntrl.matches
+                                    |filter:scorefilter1|filter:scorefilter2
+                                    |filter:teams.team1.name ">
+
+                                        <a ng-href="#/{{data.team1.code}}/{{data.team2.code}}/{{data.date}}  " id="match-list">
+                                            <div class="teams row">
+                                                <div class="col-xs-4 col-sm-4 col-md-4" style="text-align: right;">{{data.team1.name}}</div>
+                                                 <div class="scores col-xs-2 col-md-3">
+                                                    <span>{{data.score1}} - {{data.score2}} </span>
+                                                </div>
+                                                <div class="col-xs-4 col-sm-5 col-md-4 " style="text-align: left;">{{data.team2.name}} </div> 
+                                            </div>
+                                        </a>
+                                    </li>
+                               
+                          
+                     
+                   </ul>
+
+    			</div>
+    		</div>
+    	</div>
+    	
+
+
+
+</div>
